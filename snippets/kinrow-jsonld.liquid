@@ -1,0 +1,63 @@
+{%- comment -%}Product and Article JSON-LD are emitted by Dawn's native structured_data filter.{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": {{ request.origin | append: '#organization' | json }},
+  "name": {{ shop.name | json }},
+  "url": {{ request.origin | json }},
+  "logo": {{ 'kinrow-wordmark.svg' | asset_url | prepend: 'https:' | json }},
+  "description": "Considered home mobility tools for stronger, more consistent movement.",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "care@kinrow.co",
+    "availableLanguage": ["English"]
+  }]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": {{ request.origin | append: '#website' | json }},
+  "url": {{ request.origin | json }},
+  "name": {{ shop.name | json }},
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": {{ request.origin | append: routes.search_url | append: '?q={search_term_string}' | json }}
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{%- unless request.page_type == 'index' -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": {{ request.origin | json }} },
+      { "@type": "ListItem", "position": 2, "name": {{ page_title | json }}, "item": {{ canonical_url | json }} }
+    ]
+  }
+  </script>
+{%- endunless -%}
+{%- if page.handle == 'faq' -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Are KINROW products suitable for beginners?", "acceptedAnswer": { "@type": "Answer", "text": "Most are. Start with the lowest resistance that lets you control the full movement. Ask a qualified professional first if you are pregnant, managing a condition, or returning after injury." } },
+      { "@type": "Question", "name": "Are KINROW products latex-free?", "acceptedAnswer": { "@type": "Answer", "text": "Only products explicitly labeled latex-free have been confirmed as such. Check the Materials section or contact KINROW before ordering if you have an allergy." } },
+      { "@type": "Question", "name": "Does KINROW guarantee fitness results?", "acceptedAnswer": { "@type": "Answer", "text": "No. Equipment supports a routine, but outcomes vary with use, progression, recovery, nutrition, and individual circumstances." } },
+      { "@type": "Question", "name": "Can I change or cancel an order?", "acceptedAnswer": { "@type": "Answer", "text": "Email care@kinrow.co immediately. Changes are usually possible before fulfillment begins but cannot be guaranteed after warehouse processing." } },
+      { "@type": "Question", "name": "How long does delivery take?", "acceptedAnswer": { "@type": "Answer", "text": "Processing takes 1–2 business days. Standard US delivery then takes 7–12 business days." } },
+      { "@type": "Question", "name": "Can I return a product I tried?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Request a return within 30 days of delivery. Include every component; normal trial use is acceptable." } }
+    ]
+  }
+  </script>
+{%- endif -%}

@@ -1,0 +1,20 @@
+<section class="kinrow-contact-intro page-width">
+  <p class="kinrow-eyebrow">A person will read this</p>
+  <h1>How can we help?</h1>
+  <p>Questions about fit, delivery, returns, or an order are welcome. We reply within one business day, Monday–Friday, 9am–5pm ET.</p>
+  <div class="kinrow-contact-intro__cards">
+    <a href="mailto:care@kinrow.co"><span>Email</span><strong>care@kinrow.co</strong><small>Best for product and order help</small></a>
+    <a href="/pages/track-order"><span>Tracking</span><strong>Find an order</strong><small>Include your order number</small></a>
+    <a href="/pages/returns-refunds"><span>Returns</span><strong>Start with the policy</strong><small>30-day Move-With-It Promise</small></a>
+  </div>
+</section>
+{% style %}
+  .kinrow-contact-intro { padding-top: clamp(5rem, 8vw, 10rem); }
+  .kinrow-contact-intro h1 { margin: 0 0 2rem; max-width: 10ch; font-size: clamp(5rem, 9vw, 9rem); line-height: .95; }
+  .kinrow-contact-intro > p:not(.kinrow-eyebrow) { max-width: 58ch; color: var(--kinrow-muted); font-size: 1.8rem; }
+  .kinrow-contact-intro__cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; margin-top: 4rem; }
+  .kinrow-contact-intro__cards a { display: grid; gap: .6rem; min-height: 16rem; padding: 2.4rem; color: inherit; text-decoration: none; border: 1px solid var(--kinrow-border); border-radius: var(--kinrow-radius-md); background: var(--kinrow-surface); }
+  .kinrow-contact-intro__cards span, .kinrow-contact-intro__cards small { color: var(--kinrow-muted); }.kinrow-contact-intro__cards strong { font-size: 1.8rem; }
+  @media(max-width:749px){.kinrow-contact-intro__cards{grid-template-columns:1fr}}
+{% endstyle %}
+{% schema %}{ "name": "Contact introduction", "tag": "section", "settings": [], "presets": [{ "name": "Contact introduction" }] }{% endschema %}

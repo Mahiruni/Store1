@@ -1,0 +1,17 @@
+<recently-viewed class="kinrow-recently-viewed page-width" data-limit="4">
+  <script type="application/json">
+    { "title": {{ product.title | json }}, "url": {{ product.url | json }}, "image": {{ product.featured_image | image_url: width: 700 | json }}, "price": {{ product.price | money | json }} }
+  </script>
+  <div hidden data-recently-viewed-content>
+    <p class="kinrow-eyebrow">Keep comparing</p>
+    <h2>Recently viewed</h2>
+    <div class="kinrow-recently-viewed__grid" role="list"></div>
+  </div>
+</recently-viewed>
+
+<script src="{{ 'kinrow-recently-viewed.js' | asset_url }}" defer="defer"></script>
+{{ 'kinrow-recently-viewed.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{ "name": "Recently viewed", "tag": "section", "settings": [], "presets": [{ "name": "Recently viewed" }] }
+{% endschema %}

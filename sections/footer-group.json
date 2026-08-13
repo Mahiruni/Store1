@@ -1,0 +1,32 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "shop": { "type": "link_list", "settings": { "heading": "Shop", "menu": "footer" } },
+        "help": { "type": "link_list", "settings": { "heading": "Help & policies", "menu": "policies" } },
+        "contact": { "type": "text", "settings": { "heading": "We’re here", "subtext": "<p><a href=\"mailto:care@kinrow.co\">care@kinrow.co</a><br/>Monday–Friday, 9am–5pm ET<br/>Replies within one business day</p>" } }
+      },
+      "block_order": ["shop", "help", "contact"],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Useful movement notes, occasionally.",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 64,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

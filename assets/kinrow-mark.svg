@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">KINROW mark</title>
+  <rect x="3" y="3" width="58" height="58" rx="15" fill="#20251F"/>
+  <path d="M22 15v34M22 32 43 15M22 32l21 17" fill="none" stroke="#F7F3ED" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

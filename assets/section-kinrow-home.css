@@ -1,0 +1,95 @@
+.kinrow-home { --section-space: clamp(6.4rem, 9vw, 12rem); }
+.kinrow-eyebrow { margin: 0 0 1.2rem; color: var(--kinrow-accent); font-size: 1.2rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+.kinrow-hero { position: relative; min-height: clamp(58rem, 76vh, 86rem); overflow: hidden; background: #eadfce; }
+.kinrow-hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.kinrow-hero__inner { position: relative; display: flex; align-items: center; min-height: inherit; }
+.kinrow-hero__copy { width: min(56rem, 48vw); padding: 4rem 0; }
+.kinrow-hero h1 { margin: 0 0 2rem; max-width: 9ch; font-size: clamp(5.2rem, 7vw, 9.2rem); line-height: .94; }
+.kinrow-hero__copy > p:not(.kinrow-eyebrow) { margin: 0 0 2.8rem; max-width: 48ch; color: #3f463f; font-size: clamp(1.7rem, 2vw, 2.1rem); line-height: 1.5; }
+.kinrow-actions { display: flex; align-items: center; gap: 2.4rem; flex-wrap: wrap; }
+.kinrow-text-link { color: var(--kinrow-ink); font-weight: 750; text-decoration: none; border-bottom: .15rem solid currentColor; }
+.kinrow-text-link:hover { color: var(--kinrow-accent); }
+.kinrow-trust-strip { border-block: 1px solid var(--kinrow-border); background: var(--kinrow-surface); }
+.kinrow-trust-strip .page-width { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; padding-block: 1.8rem; }
+.kinrow-trust-strip span { color: var(--kinrow-muted); font-size: 1.25rem; line-height: 1.35; }
+.kinrow-trust-strip strong { display: block; color: var(--kinrow-ink); font-size: 1.3rem; }
+.kinrow-section { padding-top: var(--section-space); padding-bottom: var(--section-space); }
+.kinrow-section--surface { background: #eee7dd; }
+.kinrow-section--ink { color: #f7f3ed; background: #20251f; }
+.kinrow-section--ink h2 { color: #f7f3ed; }
+.kinrow-section--ink .kinrow-eyebrow { color: #ef9c88; }
+.kinrow-section__header { display: flex; align-items: flex-end; justify-content: space-between; gap: 3rem; margin-bottom: 4rem; }
+.kinrow-section__header h2, .kinrow-feature h2, .kinrow-community h2, .kinrow-newsletter h2, .kinrow-section--ink h2 { margin: 0; max-width: 14ch; font-size: clamp(3.6rem, 5.5vw, 6.4rem); line-height: 1; }
+.kinrow-product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.6rem, 2vw, 3rem); }
+.kinrow-product-card { color: inherit; text-decoration: none; }
+.kinrow-product-card > img, .kinrow-product-card__shape { display: block; width: 100%; aspect-ratio: 1/1.14; object-fit: cover; border-radius: var(--kinrow-radius-lg); background: #eee7dd; }
+.kinrow-product-card > div:last-child { padding: 1.8rem .4rem; }
+.kinrow-product-card h3 { display: inline; margin: 0; font-size: 2.2rem; }
+.kinrow-product-card p { margin: .7rem 0; color: var(--kinrow-muted); }
+.kinrow-product-card > div span { color: var(--kinrow-accent); font-weight: 750; }
+.kinrow-product-card__shape { position: relative; display: grid; place-items: center; overflow: hidden; background: #cbc0b2; }
+.kinrow-product-card__shape::before, .kinrow-product-card__shape::after { content: ""; position: absolute; width: 48%; aspect-ratio: 1; border: 3.2rem solid #2b2f2c; border-radius: 50%; transform: rotate(22deg); box-shadow: inset 0 0 0 .8rem #a85e4f; }
+.kinrow-product-card__shape::before { left: 5%; top: 18%; }
+.kinrow-product-card__shape::after { right: 5%; bottom: 16%; }
+.kinrow-benefit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.kinrow-benefit-grid article { padding: 3rem; border-top: 1px solid #bdb3a6; }
+.kinrow-benefit-grid article > span { color: var(--kinrow-accent); font-weight: 750; }
+.kinrow-benefit-grid h3 { margin: 3.2rem 0 1.2rem; font-size: 2.4rem; }
+.kinrow-benefit-grid p { margin: 0; color: var(--kinrow-muted); line-height: 1.65; }
+.kinrow-feature { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(36rem, .95fr); gap: clamp(4rem, 8vw, 11rem); align-items: center; padding-block: var(--section-space); }
+.kinrow-feature__media img { display: block; width: 100%; border-radius: var(--kinrow-radius-lg); }
+.kinrow-feature__copy > p:not(.kinrow-eyebrow) { color: var(--kinrow-muted); font-size: 1.8rem; line-height: 1.65; }
+.kinrow-check-list { display: grid; gap: 1.2rem; margin: 2.8rem 0 3.2rem; padding: 0; list-style: none; }
+.kinrow-check-list li { position: relative; padding-left: 2.8rem; }
+.kinrow-check-list li::before { content: "✓"; position: absolute; left: 0; color: var(--kinrow-success); font-weight: 800; }
+.kinrow-comparison { margin-top: 4rem; overflow-x: auto; border: 1px solid #4f574f; border-radius: var(--kinrow-radius-md); }
+.kinrow-comparison table { width: 100%; min-width: 70rem; border-collapse: collapse; }
+.kinrow-comparison th, .kinrow-comparison td { padding: 2rem; border-bottom: 1px solid #4f574f; text-align: left; }
+.kinrow-comparison thead th { color: #ef9c88; font-size: 1.2rem; letter-spacing: .1em; text-transform: uppercase; }
+.kinrow-comparison tbody th { color: #f7f3ed; font-weight: 650; }
+.kinrow-comparison td { color: #cbd2cb; }
+.kinrow-comparison tr:last-child th, .kinrow-comparison tr:last-child td { border-bottom: 0; }
+.kinrow-review-grid { display: grid; grid-auto-flow: column; grid-auto-columns: min(38rem, 86vw); gap: 1.6rem; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 1rem; }
+.kinrow-review-grid figure { scroll-snap-align: start; margin: 0; padding: 3rem; border: 1px solid var(--kinrow-border); border-radius: var(--kinrow-radius-md); }
+.kinrow-review-grid figure > div { color: var(--kinrow-warning); letter-spacing: .1em; }
+.kinrow-review-grid blockquote { margin: 2rem 0; font-size: 2rem; line-height: 1.5; }
+.kinrow-empty-proof { padding: clamp(3rem, 6vw, 7rem); border: 1px dashed var(--kinrow-border); border-radius: var(--kinrow-radius-lg); background: var(--kinrow-surface); }
+.kinrow-empty-proof p { margin-top: 0; font-size: clamp(2rem, 3vw, 3.2rem); line-height: 1.35; }
+.kinrow-community { display: grid; grid-template-columns: .75fr 1.25fr; gap: clamp(4rem, 8vw, 10rem); align-items: center; padding-block: var(--section-space); }
+.kinrow-community__copy p:not(.kinrow-eyebrow) { color: var(--kinrow-muted); }
+.kinrow-community__images { display: grid; grid-template-columns: 1fr .86fr; gap: 1.6rem; align-items: end; }
+.kinrow-community__images img { width: 100%; border-radius: var(--kinrow-radius-md); }
+.kinrow-faq-layout { display: grid; grid-template-columns: .7fr 1.3fr; gap: clamp(4rem, 9vw, 12rem); }
+.kinrow-faq details { border-top: 1px solid #bdb3a6; }
+.kinrow-faq details:last-child { border-bottom: 1px solid #bdb3a6; }
+.kinrow-faq summary { cursor: pointer; min-height: 6.4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; color: var(--kinrow-ink); font-size: 1.8rem; font-weight: 700; }
+.kinrow-faq summary::after { content: "+"; font-size: 2.4rem; }
+.kinrow-faq details[open] summary::after { content: "−"; }
+.kinrow-faq details p { margin: 0 0 2.4rem; color: var(--kinrow-muted); line-height: 1.65; }
+.kinrow-newsletter { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(4rem, 10vw, 14rem); padding-block: var(--section-space); }
+.kinrow-newsletter__form label { display: block; margin-bottom: .8rem; font-weight: 700; }
+.kinrow-newsletter__form > div { display: flex; gap: .8rem; }
+.kinrow-newsletter__form input { min-width: 0; flex: 1; padding: 1.2rem 1.4rem; border: 1px solid var(--kinrow-border); border-radius: var(--kinrow-radius-sm); background: var(--kinrow-surface); color: var(--kinrow-ink); font-size: 1.6rem; }
+.kinrow-newsletter__form small { display: block; margin-top: 1rem; color: var(--kinrow-muted); }
+
+@media (max-width: 749px) {
+  .kinrow-hero { min-height: 72rem; }
+  .kinrow-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(247,243,237,.96) 0%, rgba(247,243,237,.72) 56%, rgba(247,243,237,.1) 100%); }
+  .kinrow-hero > img { object-position: 68% center; }
+  .kinrow-hero__inner { z-index: 1; align-items: flex-end; }
+  .kinrow-hero__copy { width: 100%; padding-bottom: 7rem; }
+  .kinrow-hero h1 { font-size: clamp(5rem, 16vw, 7rem); }
+  .kinrow-actions { align-items: stretch; flex-direction: column; }
+  .kinrow-actions .button { width: 100%; }
+  .kinrow-trust-strip .page-width { grid-template-columns: repeat(2, 1fr); }
+  .kinrow-section__header { align-items: flex-start; flex-direction: column; }
+  .kinrow-product-grid { grid-template-columns: 1fr 1fr; }
+  .kinrow-product-card:last-child { grid-column: 1/-1; }
+  .kinrow-product-card h3 { font-size: 1.8rem; }
+  .kinrow-benefit-grid { grid-template-columns: 1fr; }
+  .kinrow-benefit-grid article { padding-inline: 0; }
+  .kinrow-feature, .kinrow-community, .kinrow-faq-layout, .kinrow-newsletter { grid-template-columns: 1fr; }
+  .kinrow-feature__copy { order: -1; }
+  .kinrow-newsletter__form > div { align-items: stretch; flex-direction: column; }
+  .kinrow-newsletter__form .button { width: 100%; }
+}

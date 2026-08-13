@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "main": { "type": "kinrow-info-page", "settings": {} }
+  },
+  "order": [
+    "main"
+  ]
+}

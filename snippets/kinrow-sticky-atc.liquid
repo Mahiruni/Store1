@@ -1,0 +1,9 @@
+{%- if product and product.available -%}
+  <kinrow-sticky-atc class="kinrow-sticky-atc" aria-label="Quick add to cart">
+    <span class="kinrow-sticky-atc__meta">
+      <strong>{{ product.title | escape }}</strong>
+      <span data-kinrow-sticky-price>{{ product.selected_or_first_available_variant.price | money }}</span>
+    </span>
+    <button type="button" class="button">Add to cart</button>
+  </kinrow-sticky-atc>
+{%- endif -%}

@@ -1,0 +1,5 @@
+assets/kinrow-*.png
+docs/*
+data/*
+README.md
+.gitignore

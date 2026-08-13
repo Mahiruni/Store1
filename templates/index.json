@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "kinrow_home": {
+      "type": "kinrow-home",
+      "blocks": {},
+      "block_order": [],
+      "settings": {}
+    }
+  },
+  "order": ["kinrow_home"]
+}

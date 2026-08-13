@@ -1,0 +1,98 @@
+{{ 'section-kinrow-info-page.css' | asset_url | stylesheet_tag }}
+<article class="kinrow-info page-width">
+  <header class="kinrow-info__header">
+    <p class="kinrow-eyebrow">KINROW customer care</p>
+    <h1>{{ page.title | escape }}</h1>
+    <p class="kinrow-info__updated">Last reviewed August 13, 2026</p>
+  </header>
+  <div class="kinrow-info__body rte">
+    {%- case page.handle -%}
+      {%- when 'our-story' -%}
+        <p class="kinrow-info__lead">KINROW makes consistent movement feel at home in real life—not staged in a perfect gym.</p>
+        <h2>Why we began</h2><p>Most home-fitness gear asks you to choose between equipment big enough to take over a room and cheap pieces that arrive with little guidance. KINROW was shaped around a more useful middle: compact tools with considered materials, clear instructions, and a visual language calm enough to live beside the rest of your home.</p>
+        <h2>What earns a place</h2><p>Every item must solve a repeatable need—strength, mobility, or recovery—through understandable setup and components we can support after purchase. Our partners manufacture to product specifications that are sample-checked before launch.</p>
+        <h2>What we will not do</h2><p>No manufactured reviews. No fake urgency. No medical promises. No shipping estimate that changes after payment. Country of origin is stated accurately on the product and customs documents.</p>
+        <aside><strong>Launch gate:</strong> the owner must add a verified founder biography, real portrait, legal entity, and operating address before publication. KINROW will not invent a person to manufacture intimacy.</aside>
+
+      {%- when 'faq' -%}
+        <p class="kinrow-info__lead">Straight answers about products, ordering, delivery, and returns.</p>
+        <h2>Products</h2>
+        <details><summary>Are KINROW products suitable for beginners?</summary><p>Most are. Start with the lowest resistance that lets you control the full movement. If you are pregnant, managing a condition, or returning after injury, ask a qualified professional first.</p></details>
+        <details><summary>Are your products latex-free?</summary><p>Only products explicitly labeled “latex-free” have been confirmed as such. Check Materials or email us before ordering if you have an allergy.</p></details>
+        <details><summary>Do you guarantee fitness results?</summary><p>No. Equipment supports a routine, but outcomes vary with use, progression, recovery, nutrition, and individual circumstances.</p></details>
+        <h2>Orders and delivery</h2>
+        <details><summary>Can I change or cancel an order?</summary><p>Email care@kinrow.co immediately. We can usually help before fulfillment begins, but cannot guarantee cancellation after warehouse processing.</p></details>
+        <details><summary>How long does delivery take?</summary><p>Processing takes 1–2 business days; standard US delivery then takes 7–12 business days.</p></details>
+        <details><summary>Can I return something I tried?</summary><p>Yes. Request a return within 30 days of delivery. Include every component; normal trial use is acceptable.</p></details>
+
+      {%- when 'shipping-delivery' -%}
+        <p class="kinrow-info__lead">The estimate shown before checkout is the estimate we operate against.</p>
+        <h2>United States delivery</h2><ul><li><strong>Processing:</strong> 1–2 business days, Monday–Friday.</li><li><strong>Standard delivery after dispatch:</strong> 7–12 business days.</li><li><strong>Free standard shipping:</strong> orders of $75 or more after discounts, before tax.</li><li><strong>Below $75:</strong> the exact charge appears before payment.</li></ul>
+        <p>Business days exclude weekends and carrier holidays. Alaska, Hawaii, territories, military addresses, PO boxes, and peak periods can take longer. We do not promise expedited delivery.</p>
+        <h2>Tracking and split shipments</h2><p>We email tracking after carrier acceptance. “Label created” means the warehouse packed the order; the first movement scan can take 72 hours. Items stocked separately may arrive in different parcels at no extra charge.</p>
+        <h2>Delay, loss, or damage</h2><p>If tracking pauses for five business days, email care@kinrow.co. We will open a carrier trace and replace or refund confirmed losses. Report damage within seven days with photos of the product, packaging, and label.</p>
+
+      {%- when 'returns-refunds' -%}
+        <p class="kinrow-info__lead">Our 30-day Move-With-It Promise gives you time to try the product carefully at home.</p>
+        <h2>Eligibility</h2><p>Request a return within 30 calendar days of recorded delivery. Opened products qualify when all pieces, accessories, guides, and original packaging are included and the item shows no damage beyond normal trial use.</p>
+        <p>Visibly soiled soft goods, modified products, gift cards, and items clearly marked final sale cannot be returned unless defective.</p>
+        <h2>Start a return</h2><ol><li>Email care@kinrow.co with your order number and item.</li><li>We reply within one business day with instructions.</li><li>Return every component within 14 days of authorization.</li></ol>
+        <h2>Costs and timing</h2><p>Return shipping is deducted unless the item arrived damaged, defective, or incorrect. Original outbound shipping is not refundable. Approved refunds return to the original method within 5–10 business days after inspection.</p>
+
+      {%- when 'track-order' -%}
+        <p class="kinrow-info__lead">Your shipping email has the fastest carrier-linked status. If you cannot find it, send us the details below.</p>
+        {%- form 'contact', class: 'kinrow-track-form' -%}
+          <input type="hidden" name="contact[topic]" value="Order tracking request">
+          <div><label for="TrackName">Full name</label><input id="TrackName" type="text" name="contact[name]" autocomplete="name" required></div>
+          <div><label for="TrackEmail">Order email</label><input id="TrackEmail" type="email" name="contact[email]" autocomplete="email" required></div>
+          <div><label for="TrackOrder">Order number</label><input id="TrackOrder" type="text" name="contact[order_number]" inputmode="numeric" placeholder="#1001" required></div>
+          <div><label for="TrackMessage">What do you need?</label><textarea id="TrackMessage" name="contact[body]" rows="5">Please help me locate my order.</textarea></div>
+          <button class="button" type="submit">Request a tracking update</button>
+          {%- if form.posted_successfully? -%}<p role="status">Received. We’ll reply within one business day.</p>{%- endif -%}{%- if form.errors -%}<div role="alert">{{ form.errors | default_errors }}</div>{%- endif -%}
+        {%- endform -%}
+        <h2>Status guide</h2><ul><li><strong>Label created:</strong> packed and awaiting a carrier scan.</li><li><strong>In transit:</strong> moving through the network.</li><li><strong>Out for delivery:</strong> expected that day.</li><li><strong>Delivered:</strong> check the delivery photo, household, reception, and safe locations.</li></ul>
+
+      {%- when 'warranty-guarantee' -%}
+        <p class="kinrow-info__lead">Two plain promises: a 30-day trial and one year of workmanship coverage.</p>
+        <h2>30-day Move-With-It Promise</h2><p>Try your item carefully. Request a return within 30 days of delivery under our Returns & Refunds policy, even after opening.</p>
+        <h2>One-year limited warranty</h2><p>For one year from delivery, KINROW will repair, replace, or refund—at our option—an item that fails from a confirmed material or manufacturing defect during normal household use.</p>
+        <h2>Not covered</h2><p>Normal wear, gradual elasticity loss, misuse, overloading, incorrect anchoring, cuts, pet damage, modification, commercial use, and damage from heat, sun, or moisture are not defects.</p>
+        <h2>Make a claim</h2><p>Email care@kinrow.co with the order number, description, and clear photos or video. We respond within one business day. This warranty does not reduce mandatory legal rights.</p>
+
+      {%- when 'fit-guide' -%}
+        <p class="kinrow-info__lead">Comfort means secure contact without restricted circulation or altered movement.</p>
+        <h2>Fabric loops</h2><p>Start with Light for activation, Medium for general work, and Heavy only when you can keep joints aligned. Exact circumference and width appear on the product page.</p>
+        <h2>Ankle weights</h2><p>Fasten above the ankle bones, snug enough not to slide but loose enough for one fingertip. Stop for numbness, pinching, joint pain, or changed walking mechanics.</p>
+        <h2>Resistance bar</h2><p>Stand centrally or anchor exactly as shown. Inspect clips, seams, tubing, and connections before every session. Never exceed the stretch limit printed on the product.</p>
+
+      {%- when 'privacy-policy' -%}
+        <p class="kinrow-info__lead">What KINROW collects, why we use it, and your choices.</p>
+        <h2>Information</h2><p>We collect contact, delivery, billing, order, return, review, and support data you provide. Shopify and authorized providers also process device, browser, approximate location, cookie, interaction, and transaction-security data.</p>
+        <h2>Purpose and recipients</h2><p>We use data to operate checkout; deliver and support orders; prevent fraud; honor warranties; measure performance; comply with law; and market only where permitted. Minimum necessary data goes to Shopify, payment and fraud providers, fulfillment partners, carriers, support, analytics, marketing vendors, advisers, and authorities where required.</p>
+        <h2>Cookies, retention, and rights</h2><p>Essential cookies run the cart and checkout. Optional analytics and advertising require consent where applicable. We retain records only for operational and legal needs. Depending on location, you may request access, correction, deletion, portability, restriction, consent withdrawal, or advertising opt-out without discrimination.</p>
+        <h2>Contact</h2><p>Email care@kinrow.co with “Privacy request.” Add the verified legal entity and physical service address before launch.</p>
+
+      {%- when 'terms-of-service' -%}
+        <p class="kinrow-info__lead">Terms for using KINROW and buying from the store.</p>
+        <h2>Store use and orders</h2><p>Provide accurate information and use the store lawfully. An order confirmation acknowledges receipt; acceptance occurs at dispatch. Prices are USD unless shown otherwise. Tax, shipping, and real discount terms appear before payment.</p>
+        <h2>Safe use</h2><p>Read instructions, inspect equipment before use, and stop for damage or pain. Products are not medical devices and content is not medical advice. Outcomes are not guaranteed.</p>
+        <h2>Policies and intellectual property</h2><p>Shipping, returns, and warranty pages form part of these terms. KINROW names, original copy, photography, graphics, and guides may not be commercially reused without permission, subject to open-source licenses.</p>
+        <h2>Liability and governing law</h2><p>To the extent permitted, KINROW is not liable for indirect or consequential loss; mandatory consumer rights remain intact. Add the verified formation state, legal entity, service address, and dispute terms before launch.</p>
+
+      {%- when 'cookie-policy' -%}
+        <p class="kinrow-info__lead">Cookies and similar technologies operate, measure, and—with permission—market the store.</p>
+        <h2>Essential</h2><p>Required for security, cart, checkout, load balancing, localization, and consent choices.</p><h2>Analytics</h2><p>Measure visits, navigation, speed, and completed purchases; off until consent where required.</p><h2>Advertising</h2><p>Measure campaigns and may personalize ads; optional where consent or opt-out rights apply.</p><h2>Manage choices</h2><p>Use the cookie control, browser settings, or recognized opt-out signal. Generate the final provider and lifetime inventory after all apps and pixels are installed.</p>
+
+      {%- when 'accessibility' -%}
+        <p class="kinrow-info__lead">KINROW aims for WCAG 2.1 AA across keyboard, screen-reader, zoom, voice, and touch use.</p>
+        <h2>Our approach</h2><p>Semantic headings and landmarks, labels, visible focus, alternatives, sufficient contrast, reduced motion, 44-pixel targets, captions, and cart status announcements are built into the theme.</p>
+        <h2>Third parties</h2><p>Review, payment, chat, consent, and tracking tools can add barriers. We test before launch and after updates, and replace tools that cannot meet an acceptable standard.</p>
+        <h2>Report a barrier</h2><p>Email care@kinrow.co with “Accessibility,” the page, device, browser, assistive technology, and task. We acknowledge within one business day and provide an alternative while investigating.</p>
+
+      {%- else -%}{{ page.content }}
+    {%- endcase -%}
+  </div>
+</article>
+{% schema %}
+{ "name": "KINROW information page", "tag": "section", "settings": [], "presets": [{ "name": "KINROW information page" }] }
+{% endschema %}

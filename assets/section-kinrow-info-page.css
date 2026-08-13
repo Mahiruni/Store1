@@ -1,0 +1,12 @@
+.kinrow-info { padding-block: clamp(5rem, 8vw, 10rem); }
+.kinrow-info__header { max-width: 86rem; padding-bottom: clamp(3rem, 6vw, 6rem); border-bottom: 1px solid var(--kinrow-border); }
+.kinrow-info__header h1 { max-width: 13ch; margin: 0; font-size: clamp(4.6rem, 8vw, 8rem); line-height: .98; }
+.kinrow-info__updated { color: var(--kinrow-muted); font-size: 1.3rem; }
+.kinrow-info__body { max-width: 82rem; padding-top: clamp(4rem, 7vw, 8rem); font-size: 1.7rem; line-height: 1.7; }
+.kinrow-info__body h2 { margin: 5rem 0 1.2rem; font-size: clamp(2.6rem, 4vw, 3.8rem); }
+.kinrow-info__lead { color: var(--kinrow-ink); font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 1.35; }
+.kinrow-info__body aside { margin: 4rem 0; padding: 2.4rem; border-left: .4rem solid var(--kinrow-warning); background: #eee7dd; }
+.kinrow-info details { border-top: 1px solid var(--kinrow-border); }.kinrow-info details:last-of-type { border-bottom: 1px solid var(--kinrow-border); }
+.kinrow-info summary { display: flex; align-items: center; min-height: 6rem; cursor: pointer; color: var(--kinrow-ink); font-weight: 700; }.kinrow-info details p { margin: 0 0 2.4rem; }
+.kinrow-track-form { display: grid; gap: 1.8rem; margin: 4rem 0 6rem; padding: clamp(2.4rem, 5vw, 4.8rem); border: 1px solid var(--kinrow-border); border-radius: var(--kinrow-radius-md); background: var(--kinrow-surface); }
+.kinrow-track-form label { display: block; margin-bottom: .5rem; color: var(--kinrow-ink); font-weight: 700; }.kinrow-track-form input, .kinrow-track-form textarea { width: 100%; padding: 1.2rem; border: 1px solid var(--kinrow-border); border-radius: var(--kinrow-radius-sm); background: #fff; font-size: 1.6rem; }.kinrow-track-form .button { justify-self: start; }

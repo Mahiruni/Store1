@@ -1,0 +1,60 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "eyebrow": { "type": "text", "settings": { "text": "KINROW · considered home strength", "text_style": "uppercase" } },
+        "title": { "type": "title" },
+        "price": { "type": "price" },
+        "rating": { "type": "rating", "settings": {} },
+        "benefits": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<ul class=\"kinrow-product-benefits\"><li>Compact design keeps serious resistance easy to store.</li><li>Comfort-first contact points help you focus on controlled form.</li><li>Simple setup gets you moving without a complicated machine.</li><li>Neutral materials belong in a real home, not only a gym.</li><li>Clear care and starting guidance support repeat use.</li></ul>"
+          }
+        },
+        "variant_picker": { "type": "variant_picker", "settings": { "picker_type": "button", "swatch_shape": "circle" } },
+        "bundle": { "type": "custom_liquid", "settings": { "custom_liquid": "{% if product.metafields.custom.bundle_message != blank %}<p class=\"kinrow-bundle-offer\"><strong>{{ product.metafields.custom.bundle_message }}</strong></p>{% endif %}" } },
+        "quantity_selector": { "type": "quantity_selector" },
+        "buy_buttons": { "type": "buy_buttons", "settings": { "show_dynamic_checkout": true, "show_gift_card_recipient": false } },
+        "trust": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% assign earliest = 'now' | date: '%s' | plus: 777600 | date: '%b %-d' %}{% assign latest = 'now' | date: '%s' | plus: 1209600 | date: '%b %-d' %}<div class=\"kinrow-trust-row\"><div><strong>Arrives {{ earliest }}–{{ latest }}</strong>US estimate; 1–2 days processing included</div><div><strong>30-day Move-With-It Promise</strong>Request a return within 30 days of delivery</div><div><strong>Secure checkout</strong>Shop Pay, cards, and available wallets</div></div>"
+          }
+        },
+        "description": { "type": "description" },
+        "specifications": { "type": "collapsible_tab", "settings": { "heading": "Specifications", "icon": "ruler", "content": "<p>Exact dimensions, materials, resistance level, care instructions, and box contents appear in the product description above. Confirm supplier specifications against the received production sample before publishing.</p>" } },
+        "shipping": { "type": "collapsible_tab", "settings": { "heading": "Shipping", "icon": "truck", "content": "<p>Orders process in 1–2 business days. Standard US delivery takes 7–12 business days after dispatch. Tracking is emailed when the carrier accepts the parcel.</p>" } },
+        "returns": { "type": "collapsible_tab", "settings": { "heading": "Returns", "icon": "return", "content": "<p>Request a return within 30 days of delivery. Opened products are eligible when all components are included and there is no damage beyond normal trial use. Return shipping is deducted unless the item arrived damaged, defective, or incorrect.</p>" } },
+        "faq": { "type": "collapsible_tab", "settings": { "heading": "Product FAQ", "icon": "question_mark", "content": "<p><strong>New to resistance training?</strong> Start light and move slowly. <strong>Returning after injury?</strong> Ask a qualified professional whether this product suits your circumstances. Fitness outcomes vary; no result is guaranteed.</p>" } },
+        "complementary": { "type": "complementary", "settings": { "heading": "Frequently bought together", "make_collapsible_row": true, "icon": "price_tag", "product_list_limit": 4, "products_per_page": 2, "pagination_style": "dots", "image_ratio": "square", "enable_quick_add": true } },
+        "share": { "type": "share", "settings": { "share_label": "Share" } }
+      },
+      "block_order": ["eyebrow", "title", "price", "rating", "benefits", "variant_picker", "bundle", "quantity_selector", "buy_buttons", "trust", "description", "specifications", "shipping", "returns", "faq", "complementary", "share"],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_position": "left",
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 48,
+        "padding_bottom": 40
+      }
+    },
+    "disclosures": { "type": "disclosures", "settings": { "padding_top": 24, "padding_bottom": 0 } },
+    "reviews": { "type": "kinrow-reviews", "blocks": {}, "block_order": [], "settings": { "padding_top": 72, "padding_bottom": 72 } },
+    "related-products": {
+      "type": "related-products",
+      "settings": { "heading": "You may also like", "heading_size": "h2", "products_to_show": 4, "columns_desktop": 4, "color_scheme": "scheme-2", "image_ratio": "square", "image_shape": "default", "show_secondary_image": true, "show_vendor": false, "show_rating": true, "columns_mobile": "2", "padding_top": 72, "padding_bottom": 72 }
+    },
+    "recently-viewed": { "type": "kinrow-recently-viewed", "settings": {} }
+  },
+  "order": ["main", "disclosures", "reviews", "related-products", "recently-viewed"]
+}
