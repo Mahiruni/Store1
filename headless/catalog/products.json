@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "researchDate": "2026-08-14",
+  "currency": "USD",
+  "purpose": "Supplier research and Shopify draft planning",
+  "publicationPolicy": "No product is publishable until its sample and every applicable supplier standard pass.",
+  "products": [
+    {
+      "handle": "release-cork-mobility-duo",
+      "title": "Release Cork Mobility Duo",
+      "decision": "Launch",
+      "score": 5.0,
+      "targetRetailUsd": 34.0,
+      "landedCostCapUsd": 9.0,
+      "targetCustomer": "Home movers, runners, and desk workers",
+      "supplierSearchPhrase": "cork massage ball peanut mobility set",
+      "trendEvidence": "Alibaba platform research reported massage balls at +125.6% month over month and the highest opportunity rate in its cited rehabilitation-accessories table.",
+      "sourceUrl": "https://seller.alibaba.com/blogs/2026/southeast-asia/sports-rehabilitation-accessories/export-strategy-white-paper",
+      "requiredSpecs": [
+        "Natural cork construction",
+        "One 6–7 cm ball plus one peanut-shaped tool",
+        "Firm density",
+        "Wipe-clean surface",
+        "Compact storage pouch"
+      ],
+      "supplierChecks": [
+        "No crumbling or strong odor",
+        "Dimensions within agreed tolerance",
+        "Credible recent photo reviews",
+        "Unbranded product and packaging",
+        "Delivered-US quote",
+        "Acceptable supplier rating and order history"
+      ]
+    },
+    {
+      "handle": "form-fabric-loop-set",
+      "title": "Form Fabric Loop Set",
+      "decision": "Launch",
+      "score": 4.85,
+      "targetRetailUsd": 39.0,
+      "landedCostCapUsd": 11.0,
+      "targetCustomer": "Beginners and strength-focused home users",
+      "supplierSearchPhrase": "fabric resistance loop bands 3 levels storage bag",
+      "trendEvidence": "Alibaba platform research reported resistance-band buyers at +48.23% year over year and identified fabric bands as a fast-growing material segment.",
+      "sourceUrl": "https://seller.alibaba.com/blogs/2026/southeast-asia/fitness-equipment/resistance-bands-configuration-guide-alibaba-b2b",
+      "requiredSpecs": [
+        "Three woven loops",
+        "Clearly labeled light, medium, and heavy levels",
+        "Reinforced seams",
+        "Non-slip inner weave",
+        "Storage pouch"
+      ],
+      "supplierChecks": [
+        "Measured resistance within ±10% of the agreed specification",
+        "Passed seam-cycle test",
+        "Skin-contact material disclosure",
+        "Latex content disclosure",
+        "Passed wash test",
+        "No copied logos"
+      ]
+    },
+    {
+      "handle": "halo-pilates-starter-kit",
+      "title": "Halo Pilates Starter Kit",
+      "decision": "Launch",
+      "score": 4.7,
+      "targetRetailUsd": 49.0,
+      "landedCostCapUsd": 15.0,
+      "targetCustomer": "Pilates beginners and small-space exercisers",
+      "supplierSearchPhrase": "pilates ring mini ball core sliders storage bag",
+      "trendEvidence": "Alibaba platform research reported Pilates accessories at +349% and eco Pilates-ring searches at +215% in Q4 2025.",
+      "sourceUrl": "https://seller.alibaba.com/blogs/2026/southeast-asia/sports-fitness/yoga-pilates-europe-opportunity-alibaba",
+      "requiredSpecs": [
+        "Padded 30–38 cm Pilates ring",
+        "Anti-burst mini ball",
+        "Dual-surface sliders",
+        "Neutral storage pouch",
+        "Simple original instruction card"
+      ],
+      "supplierChecks": [
+        "Ring compression-cycle evidence",
+        "Consistent ring resistance",
+        "Mini-ball burst rating for the exact model",
+        "Slider scratch test on hard flooring",
+        "Neutral branding",
+        "One complete kit sampled with every component"
+      ]
+    },
+    {
+      "handle": "arc-multi-loop-stretch-strap",
+      "title": "Arc Multi-Loop Stretch Strap",
+      "decision": "Launch",
+      "score": 4.6,
+      "targetRetailUsd": 29.0,
+      "landedCostCapUsd": 8.0,
+      "targetCustomer": "Mobility routines, beginners, and travelers",
+      "supplierSearchPhrase": "multi loop stretch strap pilates yoga woven",
+      "trendEvidence": "Alibaba platform research placed straps within a Pilates-accessory cluster reported at +349% demand growth.",
+      "sourceUrl": "https://seller.alibaba.com/blogs/2026/southeast-asia/sports-fitness/yoga-pilates-europe-opportunity-alibaba",
+      "requiredSpecs": [
+        "At least eight stitched loops",
+        "Soft woven polyester",
+        "Overall length of 180–200 cm",
+        "Numbered loops",
+        "Storage band"
+      ],
+      "supplierChecks": [
+        "Bar-tack stitching at load points",
+        "Tensile-test evidence for the exact construction",
+        "Passed colorfastness check",
+        "Passed edge-fray check",
+        "Product and listing clearly state that the strap is not for suspension"
+      ]
+    },
+    {
+      "handle": "quiet-core-sliders",
+      "title": "Quiet Core Sliders",
+      "decision": "Launch",
+      "score": 4.6,
+      "targetRetailUsd": 24.0,
+      "landedCostCapUsd": 6.0,
+      "targetCustomer": "Apartment workouts and short core sessions",
+      "supplierSearchPhrase": "dual sided core sliders carpet hardwood pilates",
+      "trendEvidence": "Alibaba platform research included sliders in a Pilates-accessory cluster reported at +349% demand growth.",
+      "sourceUrl": "https://seller.alibaba.com/blogs/2026/southeast-asia/sports-fitness/yoga-pilates-europe-opportunity-alibaba",
+      "requiredSpecs": [
+        "Pair of 17–18 cm discs",
+        "Low-profile ABS core",
+        "Fabric side for hard floors",
+        "EVA side for carpet"
+      ],
+      "supplierChecks": [
+        "Passed scratch test on wood",
+        "Edges remain bonded after repeated use",
+        "No strong odor",
+        "Both discs have matching dimensions",
+        "No sharp molding",
+        "Delivered-US quote"
+      ]
+    },
+    {
+      "handle": "studio-grip-socks-two-pack",
+      "title": "Studio Grip Socks — 2 Pack",
+      "decision": "Pilot",
+      "score": 4.2,
+      "targetRetailUsd": 29.0,
+      "landedCostCapUsd": 8.5,
+      "targetCustomer": "Pilates and barre customers",
+      "supplierSearchPhrase": "pilates grip socks non slip neutral 2 pack",
+      "trendEvidence": "Shopify's 2026 trend-products editorial highlighted Pilates grip socks and other lightweight Pilates accessories.",
+      "sourceUrl": "https://www.shopify.com/de/blog/trend-produkte-verkaufen",
+      "requiredSpecs": [
+        "Two neutral pairs",
+        "Silicone sole grip",
+        "Breathable disclosed fiber blend",
+        "Inclusive size range",
+        "Recyclable sleeve"
+      ],
+      "supplierChecks": [
+        "Grip remains effective after wash-cycle testing",
+        "Full fiber-composition disclosure",
+        "Accurate size chart verified against samples",
+        "Passed colorfastness check",
+        "Hygienic individual packaging",
+        "No counterfeit branding"
+      ]
+    },
+    {
+      "handle": "anchor-soft-wrist-ankle-weights",
+      "title": "Anchor Soft Wrist & Ankle Weights",
+      "decision": "Pilot",
+      "score": 4.05,
+      "targetRetailUsd": 59.0,
+      "landedCostCapUsd": 20.0,
+      "targetCustomer": "Walking, light strength, and short home sessions",
+      "supplierSearchPhrase": "soft adjustable wrist ankle weights pair walking",
+      "trendEvidence": "Shopify's 2026 wellness synthesis identified at-home fitness and recovery as continuing themes; compact wearable resistance fits the KINROW range.",
+      "sourceUrl": "https://www.shopify.com/enterprise/blog/health-wellness-trends",
+      "requiredSpecs": [
+        "Soft adjustable pair",
+        "Exact weight stated per item and per pair",
+        "Secure low-profile closure",
+        "Neutral textile shell"
+      ],
+      "supplierChecks": [
+        "Actual weight within ±5% of the agreed specification",
+        "Passed closure-cycle test",
+        "Passed leak and tear test",
+        "Skin-contact materials disclosed",
+        "Clear pair labeling",
+        "Local-warehouse option preferred"
+      ]
+    },
+    {
+      "handle": "compact-mini-stepper-with-bands",
+      "title": "Compact Mini Stepper with Bands",
+      "decision": "Watch",
+      "score": 3.2,
+      "targetRetailUsd": 119.0,
+      "landedCostCapUsd": 52.0,
+      "targetCustomer": "Customers wanting short cardio sessions",
+      "supplierSearchPhrase": "mini stepper resistance bands quiet hydraulic",
+      "trendEvidence": "Shopify's 2026 trend-products editorial called out mini steppers for small apartments and short home workouts.",
+      "sourceUrl": "https://www.shopify.com/de/blog/trend-produkte-verkaufen",
+      "requiredSpecs": [
+        "Quiet hydraulic mechanism",
+        "Stable non-slip pedals",
+        "Resistance-band option",
+        "Clearly stated maximum user weight",
+        "Compact documented footprint"
+      ],
+      "supplierChecks": [
+        "US warehouse preferred",
+        "Applicable compliance and independent load-testing evidence",
+        "Acceptable documented hydraulic leak rate",
+        "Passed noise test",
+        "Replacement parts available",
+        "Domestic returns process and allowance"
+      ]
+    },
+    {
+      "handle": "foldable-pilates-reformer-board",
+      "title": "Foldable Pilates Reformer Board",
+      "decision": "Avoid",
+      "score": 3.25,
+      "targetRetailUsd": 149.0,
+      "landedCostCapUsd": 60.0,
+      "targetCustomer": "Trend-driven home Pilates buyers",
+      "supplierSearchPhrase": "foldable pilates reformer board home",
+      "trendEvidence": "Alibaba platform research reported home-reformer searches at +210% while also noting buyer rejection of unsafe budget boards.",
+      "sourceUrl": "https://seller.alibaba.com/blogs/2026/southeast-asia/sports-fitness/yoga-pilates-europe-opportunity-alibaba",
+      "requiredSpecs": [
+        "Independently load-tested construction",
+        "Lockout protection",
+        "Clear assembly and use instructions",
+        "Replacement-parts support"
+      ],
+      "supplierChecks": [
+        "Verifiable structural test evidence for the exact model",
+        "Product-liability review",
+        "Domestic return address",
+        "Passed sample stress test",
+        "No activation under the current Avoid decision"
+      ]
+    },
+    {
+      "handle": "adjustable-dumbbell-pair",
+      "title": "Adjustable Dumbbell Pair",
+      "decision": "Avoid",
+      "score": 2.4,
+      "targetRetailUsd": 329.0,
+      "landedCostCapUsd": 160.0,
+      "targetCustomer": "Serious home-strength customers",
+      "supplierSearchPhrase": "adjustable dumbbell pair compact home gym",
+      "trendEvidence": "Alibaba platform research reported high buyer intent for adjustable dumbbells while identifying locking quality and freight as major risks.",
+      "sourceUrl": "https://seller.alibaba.com/blogs/2026/southeast-asia/fitness-equipment/southeast-asian-suppliers-global-strength-training-demand-alibaba",
+      "requiredSpecs": [
+        "Positive locking mechanism",
+        "Floor-safe finish",
+        "Compact cradle",
+        "Clear increment labeling"
+      ],
+      "supplierChecks": [
+        "Independent cycle and drop testing for the exact model",
+        "Documented lock-failure history",
+        "Delivered freight quote",
+        "Damage-resistant packaging evidence",
+        "Warranty and replacement-parts support",
+        "No activation under the current Avoid decision"
+      ]
+    }
+  ]
+}
