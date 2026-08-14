@@ -1,0 +1,16 @@
+.env*
+**/.env*
+
+# Never upload local Shopify app state or credential material.
+.shopify/
+**/.shopify/
+**/*shopify*credentials*
+**/*shopify*secrets*
+**/*shopify*token*
+**/shopify.app*.toml
+
+# Local-only build and dependency artifacts.
+.git/
+.next/
+node_modules/
+tsconfig.tsbuildinfo
